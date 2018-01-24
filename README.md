@@ -28,3 +28,11 @@ run it with `$ xspim -font 6x10`
 3. File -> reinitialize and load file ->  **assignment\_1/add2.asm**
     1. find the thing that says "single step" when you hover over it. click it. as many times as you want (<=10 (empirical result))
     2. reinitialize again with assignment\_1/add2.asm -> right click on the line that says "lui $t1, 0x1000 # temporary..." -> set breakpoint -> Run -> see breakpoint dialog -> rejoice -> single step/continue
+
+## Assignment 2
+
+### Task
+1. Write a program to compute GCD of two 32-bit integers using Euclid's algorithm
+2. Implement the given sample program (**assignment\_2/sample.asm**). Study the instructions and the working of the program.
+3. Statically declare some prompt strings for user input, and redo the addition program in **assignment 1** to prompt the user for two numbers and print the result.
+4. Define an array of 8 integers as static data. Use the `.align` assembler directive. Read 8 values as input with prompts to the user and store it in the array. Examine what happens without the assembler directive.
