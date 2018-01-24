@@ -36,3 +36,6 @@ run it with `$ xspim -font 6x10`
 2. Implement the given sample program (**assignment\_2/sample.asm**). Study the instructions and the working of the program.
 3. Statically declare some prompt strings for user input, and redo the addition program in **assignment 1** to prompt the user for two numbers and print the result.
 4. Define an array of 8 integers as static data. Use the `.align` assembler directive. Read 8 values as input with prompts to the user and store it in the array. Examine what happens without the assembler directive.
+
+### Solution
+1. **assignment_2/gcd.asm**
