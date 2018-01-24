@@ -1,8 +1,0 @@
-1) open qtspim ($ qtspim) -> File -> Reinitialize and load file -> add1.asm -> Run -> ignore the popup -> see the highlighted registers on the left -> celebrate.
-2) File -> reinitialize and load file -> add2.asm -> Run -> same
-3) File -> reinitialize and load file ->  add2.asm
-  i) find the thing that says "single step" when you hover over it. click it. as many times as you want (<=10 (empirical result))
-  ii) reinitialize again with add2.asm -> right click on the line that says "lui $t1, 0x1000 # temporary..." -> set breakpoint -> Run -> see breakpoint dialog -> rejoice -> single step/continue
-4) realize there's no Q4 -> rejoice.
-
-corrections welcome. not even sure github gists supports it though.
