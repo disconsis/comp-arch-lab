@@ -6,7 +6,7 @@ NOTE: Instructions for linux only
 2. To install spim/xspim, run `$ sudo apt install spim`
 3. xspim should successfully run with `$ xspim`.
 
-If all this does is print a font nameand quit, as below,
+If all this does is print a font name and quit, as below,
 ```bash
 $ xspim
 *-courier-medium-r-normal--12-*-75-*
