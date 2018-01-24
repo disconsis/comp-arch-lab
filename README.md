@@ -18,8 +18,9 @@ run it with `$ xspim -font 6x10`
 ### Task
 1. Write a program to add the integers 1 and 2
 2. Write a program to load and add two 32-bit values: 0x10000001 and 0x20000002.
-3. i) Step through the instructions  
-   ii) Set an appropriate breakpoint in the program
+3.
+   1. Step through the instructions  
+   2. Set an appropriate breakpoint in the program
 
 ### Solution
 1. open qtspim ($ qtspim) -> File -> Reinitialize and load file -> **assignment\_1/add1.asm** -> Run ->  see the highlighted registers on the left -> celebrate.
