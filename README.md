@@ -19,12 +19,12 @@ run it with `$ xspim -font 6x10`
 1. Write a program to add the integers 1 and 2
 2. Write a program to load and add two 32-bit values: 0x10000001 and 0x20000002.
 3.
-   1. Step through the instructions  
-   2. Set an appropriate breakpoint in the program
+    1. Step through the instructions  
+    2. Set an appropriate breakpoint in the program
 
 ### Solution
 1. open qtspim ($ qtspim) -> File -> Reinitialize and load file -> **assignment\_1/add1.asm** -> Run ->  see the highlighted registers on the left -> celebrate.
 2. File -> reinitialize and load file -> **assignment\_1/add2.asm** -> Run -> same
 3. File -> reinitialize and load file ->  **assignment\_1/add2.asm**
-  1. find the thing that says "single step" when you hover over it. click it. as many times as you want (<=10 (empirical result))
-  2. reinitialize again with assignment\_1/add2.asm -> right click on the line that says "lui $t1, 0x1000 # temporary..." -> set breakpoint -> Run -> see breakpoint dialog -> rejoice -> single step/continue
+    1. find the thing that says "single step" when you hover over it. click it. as many times as you want (<=10 (empirical result))
+    2. reinitialize again with assignment\_1/add2.asm -> right click on the line that says "lui $t1, 0x1000 # temporary..." -> set breakpoint -> Run -> see breakpoint dialog -> rejoice -> single step/continue
