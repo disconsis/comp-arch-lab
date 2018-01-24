@@ -22,7 +22,7 @@ run it with `$ xspim -font 6x10`
    ii) Set an appropriate breakpoint in the program
 
 ### Solution
-1. open qtspim ($ qtspim) -> File -> Reinitialize and load file -> **assignment\_1/add1.asm** -> Run -> ignore the popup -> see the highlighted registers on the left -> celebrate.
+1. open qtspim ($ qtspim) -> File -> Reinitialize and load file -> **assignment\_1/add1.asm** -> Run ->  see the highlighted registers on the left -> celebrate.
 2. File -> reinitialize and load file -> **assignment\_1/add2.asm** -> Run -> same
 3. File -> reinitialize and load file ->  **assignment\_1/add2.asm**
   1. find the thing that says "single step" when you hover over it. click it. as many times as you want (<=10 (empirical result))

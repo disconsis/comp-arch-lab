@@ -12,5 +12,8 @@ ori     $t1, 0x0001     # t1 = 0x10000000 | 0x0001 == 0x10000001
 lui     $t2, 0x2000
 ori     $t2, 0x0002
 
-# v0 - register for return value
-add     $v0, $t2, $t1   # v0 = t2 + t1 == 0x30000003
+# v1 - register for return value
+add     $v1, $t2, $t1   # v1 = t2 + t1 == 0x30000003
+
+# return to outer function
+jr      $ra
