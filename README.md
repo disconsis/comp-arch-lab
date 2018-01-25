@@ -13,6 +13,10 @@ $ xspim
 ```
 run it with `$ xspim -font 6x10`
 
+## References
+[Assembler directives](http://students.cs.tamu.edu/tanzir/csce350/reference/assembler_dir.html)  
+[System calls](http://students.cs.tamu.edu/tanzir/csce350/reference/syscalls.html)  
+
 ## Assignment 1
 
 ### Task
