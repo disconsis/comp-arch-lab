@@ -6,14 +6,7 @@ end:    .asciiz "End"
 endl:   .asciiz "\n"
 prompt: .asciiz "Enter number: "
 arr:
-.word   1
-.word   2
-.word   3
-.word   4
-.word   5
-.word   6
-.word   7
-.word   8
+.word   1, 2, 3, 4, 5, 6, 7, 8
 
 .text
 main:
