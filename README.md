@@ -27,11 +27,11 @@ run it with `$ xspim -font 6x10`
     2. Set an appropriate breakpoint in the program
 
 ### Solution
-1. open qtspim ($ qtspim) -> File -> Reinitialize and load file -> [assignment\_1/add1.asm](assignment_1/add1.asm) -> Run ->  see the highlighted registers on the left -> celebrate.
-2. File -> reinitialize and load file -> [assignment\_1/add2.asm](assignment_1/add2.asm) -> Run -> same
-3. File -> reinitialize and load file ->  [assignment\_1/add2.asm](assignment_1/add2.asm)
+1. open qtspim ($ qtspim) → File → Reinitialize and load file → [assignment\_1/add1.asm](assignment_1/add1.asm) → Run →  see the highlighted registers on the left → celebrate.
+2. File → reinitialize and load file → [assignment\_1/add2.asm](assignment_1/add2.asm) → Run → same
+3. File → reinitialize and load file →  [assignment\_1/add2.asm](assignment_1/add2.asm)
     1. find the thing that says "single step" when you hover over it. click it. as many times as you want (<=10 (empirical result))
-    2. reinitialize again with assignment\_1/add2.asm -> right click on the line that says "lui $t1, 0x1000 # temporary..." -> set breakpoint -> Run -> see breakpoint dialog -> rejoice -> single step/continue
+    2. reinitialize again with assignment\_1/add2.asm → right click on the line that says "lui $t1, 0x1000 # temporary..." → set breakpoint → Run → see breakpoint dialog → rejoice → single step/continue
 
 ## Assignment 2
 

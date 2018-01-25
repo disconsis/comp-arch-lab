@@ -9,13 +9,13 @@ main:
     # for syscall, v0 = syscall number; a0-a3: syscall args
 
      # print prompt 1
-     li      $v0, 4 # syscall 4 -> print string
+     li      $v0, 4 # syscall 4 → print string
      # la == load address of symbol
      la      $a0, prompt1
      syscall
 
      # read first number (into t0)
-     li      $v0, 5 # syscall 5 -> read integer into v0
+     li      $v0, 5 # syscall 5 → read integer into v0
      syscall
      move    $t0, $v0
 
