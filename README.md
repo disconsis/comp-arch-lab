@@ -41,3 +41,6 @@ run it with `$ xspim -font 6x10`
 1. [assignment\_2/gcd.asm](assignment_2/gcd.asm)
 2. *TODO*
 3. [assignment\_2/add.asm](assignment_2/add.asm)
+4. [assignment\_2/array.asm](assignment_2/array.asm)
+    1. Even without the `.align` directive, data is still properly aligned on word boundary; thus the program works correctly.
+    2. However, explicitly turning off alignment with `.align 0` causes address errors due to unaligned addresses.
