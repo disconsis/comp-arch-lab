@@ -134,6 +134,14 @@ end_loop_2_end:
 .ent main
 main:
     sub $sp, 24
+    # stack contents:
+    # ...   <- previous $sp
+    # $ra   <- $sp + 20
+    # arg5  <- $sp + 16
+    # arg4  <- $sp + 12
+    # arg3  <- $sp + 8
+    # arg2  <- $sp + 4
+    # arg1  <- $sp
 
     # push return addr onto stack
     sw $ra, 20($sp)
