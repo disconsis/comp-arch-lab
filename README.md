@@ -30,7 +30,7 @@ run it with `$ xspim -font 6x10`
 1. open qtspim ($ qtspim) → File → Reinitialize and load file → [assignment\_1/add1.asm](assignment_1/add1.asm) → Run →  see the highlighted registers on the left → celebrate.
 2. File → reinitialize and load file → [assignment\_1/add2.asm](assignment_1/add2.asm) → Run → same
 3. File → reinitialize and load file →  [assignment\_1/add2.asm](assignment_1/add2.asm)
-    1. find the thing that says "single step" when you hover over it. click it. as many times as you want (<=10 (empirical result))
+    1. find the thing that says "single step" when you hover over it. click it. as many times as you want
     2. reinitialize again with assignment\_1/add2.asm → right click on the line that says "lui $t1, 0x1000 # temporary..." → set breakpoint → Run → see breakpoint dialog → rejoice → single step/continue
 
 ## Assignment 2
@@ -57,3 +57,6 @@ run it with `$ xspim -font 6x10`
 2. Write a program for recursively calculating factorial of an integer.
 3. Write a recursive mergesort procedure using the merge function taking the starting address and the length of the sub-array as arguments. It should also check that the sub-array is sorted before returning. Call this function from main with a length 8 array input by the user.
 4. Insert a breakpoint at a place in your code where the stack depth (wrt call activations) will be at its maximum size. Point out the various call activation records and explain the contents of the stack.
+
+### Solution
+1. [assignment\_3/merge.asm](assignment_3/merge.asm)
