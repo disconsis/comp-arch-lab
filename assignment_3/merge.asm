@@ -231,6 +231,8 @@ printloop:
 
     # get return addr from stack
     lw $ra, 20($sp)
+    # restore $sp
+    addi $sp, 24
     jr $ra
 
 .end main
