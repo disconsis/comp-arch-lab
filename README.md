@@ -54,9 +54,10 @@ run it with `$ xspim -font 6x10`
 
 ### Task
 1. Write a function to merge two sorted arrays into another, assuming the final array has enough space. Take array1, length1, array2, length2, final\_array as inputs. Call this function from main with the two halves of a length 8 array input by the user.
-2. Write a program for recursively calculating factorial of an integer.
+2. Write a program for recursively calculating the factorial of an integer.
 3. Write a recursive mergesort procedure using the merge function taking the starting address and the length of the sub-array as arguments. It should also check that the sub-array is sorted before returning. Call this function from main with a length 8 array input by the user.
 4. Insert a breakpoint at a place in your code where the stack depth (wrt call activations) will be at its maximum size. Point out the various call activation records and explain the contents of the stack.
 
 ### Solution
 1. [assignment\_3/merge.asm](assignment_3/merge.asm)
+2. [assignment\_3/factorial.asm](assignment_3/factorial.asm)
