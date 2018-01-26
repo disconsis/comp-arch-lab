@@ -32,7 +32,7 @@ merge:
 #   t8 → compare register
 
 # DEBUG
-#    lw $t4, 16($sp) # t4 = farr
+    lw $t4, 16($sp) # t4 = farr
     li $t1, 0 # i1 = 0
     li $t3, 0 # i2 = 0
 
@@ -132,10 +132,10 @@ end_loop_2_end:
 
 .ent main
 main:
-    # push return addr onto stack
-    sub $sp, 4
-    sw $ra, 0($sp)
+    sub $sp, 24
 
+    # push return addr onto stack
+    sw $ra, 20($sp)
 
     # print arr1 prompt
     li $v0, 4
@@ -190,8 +190,10 @@ readloop_2:
     # addi $a2, $a0, 16
     la $a2, arr2
     li $a3, 4
-# DEBUG
-    la $t4, final
+    # push 5th argument onto stack,
+    # leaving space for the first four
+    la $t1, final
+    sw $t1, 16($sp)
 
     # call merge
     jal merge
@@ -219,7 +221,7 @@ printloop:
     bnez $t8, printloop
 
     # get return addr from stack
-    lw $ra, 0($sp)
+    lw $ra, 20($sp)
     jr $ra
 
 .end main
