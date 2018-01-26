@@ -31,7 +31,6 @@ merge:
 #   t4 → farr
 #   t8 → compare register
 
-# DEBUG
     lw $t4, 16($sp) # t4 = farr
     li $t1, 0 # i1 = 0
     li $t3, 0 # i2 = 0
@@ -94,7 +93,8 @@ end_loop_1_start:
     slt $t8, $t1, $a1
     beqz $t8, end_loop_1_end
 
-    sw $t0, 0($t4) # *farr = *arr1
+    lw $t0, 0($a0) # t0 = *arr1
+    sw $t0, 0($t4) # *farr = t0
     addi $t4, 4 # farr++
     addi $a0, 4 # arr1++
     addi $t1, 1 # i1++
@@ -116,7 +116,8 @@ end_loop_2_start:
     slt $t8, $t3, $a3
     beqz $t8, end_loop_2_end
 
-    sw $t2, 0($t4) # *farr = *arr2
+    lw $t2, 0($a2) # t2 = *arr2
+    sw $t2, 0($t4) # *farr = t2
     addi $t4, 4 # farr++
     addi $a2, 4 # arr2++
     addi $t3, 1 # i2++
