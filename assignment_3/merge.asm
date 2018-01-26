@@ -1,5 +1,4 @@
 .data
-# array: .word 23, 12, 97, 1, 5, 9, 55, 10
 arr1: .word 11, 23, 97, 124
 arr2: .word 85, 86, 87, 99
 final: .word 0, 0, 0, 0, 0, 0, 0, 0
@@ -133,16 +132,17 @@ end_loop_2_end:
 
 .ent main
 main:
-    sub $sp, 24
     # stack contents:
     # ...   <- previous $sp
     # $ra   <- $sp + 20
     # arg5  <- $sp + 16
-    # arg4  <- $sp + 12
-    # arg3  <- $sp + 8
-    # arg2  <- $sp + 4
-    # arg1  <- $sp
+    # arg4  <- $sp + 12 | arguments 1-4 passed through a0-a3.
+    # arg3  <- $sp + 8  | so these are empty.
+    # arg2  <- $sp + 4  | kept by convention for the callee
+    # arg1  <- $sp      | to optionally store its arguments in.
 
+    # make space on stack
+    sub $sp, 24
     # push return addr onto stack
     sw $ra, 20($sp)
 
@@ -207,6 +207,7 @@ readloop_2:
     # call merge
     jal merge
 
+
     # print answer string
     li $v0, 4
     la $a0, answer
@@ -228,6 +229,7 @@ printloop:
     addi $t6, 4
     slti $t8, $t5, 8
     bnez $t8, printloop
+
 
     # get return addr from stack
     lw $ra, 20($sp)
