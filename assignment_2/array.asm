@@ -12,8 +12,7 @@ arr:
 main:
     # initialize loop counters
     la  $t0, arr # array addr
-    li  $t1, 0 # loop counter
-    li  $t8, 8 # loop max
+    li  $t1, 8 # loop counter
 
 readloop:
     # print prompt
@@ -26,11 +25,9 @@ readloop:
     sw  $v0, 0($t0)
     # index++
     add $t0, 4
-    add $t1, 1
     # if t1 > 8: break
-    sub $t2, $t8, $t1
-    bgtz $t2, readloop
-
+    sub $t1, 1
+    bgtz $t1, readloop
 
     # print start
     li  $v0, 4
@@ -38,8 +35,7 @@ readloop:
     syscall
     # initialize loop counters
     la  $t0, arr # array addr
-    li  $t1, 0 # loop counter
-    li  $t8, 8 # loop max
+    li  $t1, 8 # loop counter
 
 printloop:
     # print arr[t1]
@@ -52,10 +48,9 @@ printloop:
     syscall
     # index++
     add $t0, 4
-    add $t1, 1
     # if t1 > 8: break
-    sub $t2, $t8, $t1
-    bgtz $t2, printloop
+    sub $t1, 1
+    bgtz $t1, printloop
     # print end
     li  $v0, 4
     la  $a0, end
