@@ -17,7 +17,7 @@ main:
 
     # prompt and read second number into t1
     li      $v0, 4
-    la      $a0, prompt1
+    la      $a0, prompt2
     syscall
     li      $v0, 5
     syscall
