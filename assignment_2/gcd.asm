@@ -27,30 +27,35 @@ main:
      syscall
      move    $t1, $v0
 
-    # while ( t0 != t1 ) {
+    # while ( t0 != 0 && t1 != 0 ) {
 start:
-    beq     $t0, $t1, end
+    beqz $t0, end
+    beqz $t1, end
 
         # if ( t0 > t1 ) {
     sub     $t2, $t0, $t1
     bltz    $t2, second_greater
 
-            # t0 = t0 - t1
-    sub     $t0, $t0, $t1
+            # t0 = t0 % t1
+    move $t3, $t1
+    div $t0, $t1
+    mfhi $t0
     j       start
         # }
 
         # else {
 second_greater:
-            # t1 = t1 - t0
-    sub     $t1, $t1, $t0
+            # t1 = t1 % t0
+    move $t3, $t0
+    div $t1, $t0
+    mfhi $t1
     j       start
         # }
     # }
 
 end:
     # set return value
-    move    $v1, $t0
+    move    $v1, $t3
 
     # print answer
     li      $v0, 4
