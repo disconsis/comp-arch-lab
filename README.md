@@ -44,7 +44,7 @@ run it with `$ xspim -font 6x10`
 
 ### Solution
 1. [assignment\_2/gcd.asm](assignment_2/gcd.asm)
-2. Honestly have no idea what he's asking us to do, given that the given program already works and no objective is specified.
+2. The [sample program](assignment_2/sample.asm) takes a number and counts down from it.
 3. [assignment\_2/add.asm](assignment_2/add.asm)
 4. [assignment\_2/array.asm](assignment_2/array.asm)
     1. Even without the `.align` directive, data is still properly aligned on word boundary; thus the program works correctly.
