@@ -62,3 +62,4 @@ run it with `$ xspim -font 6x10`
 ### Solution
 1. [assignment\_3/merge.asm](assignment_3/merge.asm)
 2. [assignment\_3/factorial.asm](assignment_3/factorial.asm)
+3. [assignment\_3/mergesort.asm](assignment_3/mergesort.asm)
