@@ -92,7 +92,6 @@ mergesort:
     bne $a1, $t0, non_unity
     # return 0
     li $v0, 0
-    lw $ra, 36($sp)
     add $sp, 40
     jr $ra
 
