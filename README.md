@@ -65,21 +65,22 @@ run it with `$ xspim -font 6x10`
 3. [assignment\_3/mergesort.asm](assignment_3/mergesort.asm)
 4. Break at the start of mergesort (line 84) and continue till `$a1 == 1`. The call stack for each function looks like this:
 ```
-...
-+---------+  ↑
-|   s2    |  low addrs
-+---------+
-|   s1    |
-+---------+
-|   s0    |
-+---------+
-|   ra    |
-+---------+
-|   a0    |
-+---------+
-|   a1    |  high addrs
-+---------+  ↓
-...
+↑ low addrs
++---------+ \
+|   s2    | |
++---------+ |                    ↑ low addrs
+|   s1    | |
++---------+ |                    +-----------------------------+
+|   s0    | |                    | frame for mergesort(arr, 1) |
++---------+ +- stack frame --+   +-----------------------------+
+|   ra    | |                |   | frame for mergesort(arr, 2) |
++---------+ |                |   +-----------------------------+
+|   a0    | |                |   | frame for mergesort(arr, 4) |
++---------+ |                |   +-----------------------------+
+|   a1    | |                +-->| frame for mergesort(arr, 8) |
++---------+ /                    +-----------------------------+
+
+↓ high addrs
 
 ```
 where each part represents a saved register. This is pushed on the stack for each function as it gets called. After a function returns, it's portion of the stack gets popped off. Keep in mind that the stack grows towards low addresses.
