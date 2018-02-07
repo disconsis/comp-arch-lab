@@ -1,7 +1,7 @@
 .data
-arr1: .word 11, 23, 97, 124
-arr2: .word 85, 86, 87, 99
-final: .word 0, 0, 0, 0, 0, 0, 0, 0
+arr1: .space 16
+arr2: .space 16
+final: .space 32
 comma: .asciiz ", "
 prompt1: .asciiz "Enter the first sorted array\n"
 prompt2: .asciiz "\nEnter the second sorted array\n"

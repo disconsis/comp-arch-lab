@@ -7,7 +7,7 @@ error: .asciiz "[!] Error while sorting\n"
 comma: .asciiz ", "
 
 .align 2
-inp_arr: .word 234, 11, 5, 99, 1258, 223, 99, 51
+inp_arr: .space 32
 tmp_arr: .space 32
 
 
