@@ -63,7 +63,7 @@ run it with `$ xspim -font 6x10`
 1. [assignment\_3/merge.asm](assignment_3/merge.asm)
 2. [assignment\_3/factorial.asm](assignment_3/factorial.asm)
 3. [assignment\_3/mergesort.asm](assignment_3/mergesort.asm)
-4. Break at the start of mergesort (line 84) and continue till a1 == 1. The call stack looks like this:
+4. Break at the start of mergesort (line 84) and continue till a1 == 1. The call stack for each function looks like this:
 ```
 ...
 +---------+  ↑
@@ -82,4 +82,4 @@ run it with `$ xspim -font 6x10`
 ...
 
 ```
-where each part represents a saved register. Keep in mind that the stack grows towards low addresses.
+where each part represents a saved register. This is pushed on the stack for each function as it gets called. After a function returs, it's portion of the stack gets popped off. Keep in mind that the stack grows towards low addresses.
