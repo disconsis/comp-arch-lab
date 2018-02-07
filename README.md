@@ -63,3 +63,23 @@ run it with `$ xspim -font 6x10`
 1. [assignment\_3/merge.asm](assignment_3/merge.asm)
 2. [assignment\_3/factorial.asm](assignment_3/factorial.asm)
 3. [assignment\_3/mergesort.asm](assignment_3/mergesort.asm)
+4. Break at the start of mergesort (line 84) and continue till a1 == 1. The call stack looks like this:
+```
+...
++---------+  ↑
+|   s2    |  low addrs
++---------+
+|   s1    |
++---------+
+|   s0    |
++---------+
+|   ra    |
++---------+
+|   a0    |
++---------+
+|   a1    |  high addrs
++---------+  ↓
+...
+
+```
+where each part represents a saved register. Keep in mind that the stack grows towards low addresses.
