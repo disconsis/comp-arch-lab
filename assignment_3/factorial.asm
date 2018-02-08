@@ -17,6 +17,7 @@ factorial:
     # if a0 == 0: return 1
     bnez $a0, non_zero
     li $v0, 1
+    add $sp, 8
     jr $ra
     # else
     non_zero:
