@@ -63,7 +63,7 @@ run it with `$ xspim -font 6x10`
 1. [assignment\_3/merge.asm](assignment_3/merge.asm)
 2. [assignment\_3/factorial.asm](assignment_3/factorial.asm)
 3. [assignment\_3/mergesort.asm](assignment_3/mergesort.asm)
-4. Break at the start of mergesort (line 84) and continue till `$a1 == 1`. The call stack for each function looks like this:
+4. Break at line 94 in mergesort.asm, since this is the point just before `mergesort(arr, 1)` returns. The call stack for each function looks like this:
 ```
 ↑ low addrs
 +---------+ \
